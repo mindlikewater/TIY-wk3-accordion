@@ -3,20 +3,24 @@
 
 #wholepage {
   padding: 25px 25px; }
+  #wholepage .titlebar {
+    color: white;
+    padding-top: 12px;
+    width: 500px;
+    height: 45px;
+    background: #00cada;
+    overflow: auto;
+    float: left;
+    clear: both; }
+    #wholepage .titlebar span {
+      font-weight: lighter;
+      padding-left: 15px; }
   #wholepage .section-box {
     overflow: auto;
     float: left;
     clear: both;
     border: 1px solid #00cada;
     width: 500px;
-    height: 220px; }
-    #wholepage .section-box .titlebar {
-      color: white;
-      padding-top: 12px;
-      height: 45px;
-      background: #00cada; }
-      #wholepage .section-box .titlebar span {
-        font-weight: lighter;
-        padding-left: 15px; }
+    height: 160px; }
     #wholepage .section-box p {
       padding-left: 20px; }
