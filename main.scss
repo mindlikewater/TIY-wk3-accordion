@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+@mixin rectangle ($w, $h) {
+  border: 1px solid rgb(0, 202, 218);
+  width: $w;
+  height: $h;
+}
+
+.section-box {
+  @include rectangle(500px, 170px);
+}

@@ -1,0 +1,7 @@
+* {
+  box-sizing: border-box; }
+
+.section-box {
+  border: 1px solid #00cada;
+  width: 500px;
+  height: 170px; }
