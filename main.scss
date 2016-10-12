@@ -1,13 +1,41 @@
+$color: rgb(0, 202, 218);
+
 * {
   box-sizing: border-box;
 }
 
 @mixin rectangle ($w, $h) {
-  border: 1px solid rgb(0, 202, 218);
+  border: 1px solid $color;
   width: $w;
   height: $h;
 }
 
-.section-box {
-  @include rectangle(500px, 170px);
+@mixin title ($h) {
+  height: $h;
+  background: $color;
+}
+
+#wholepage {
+  padding: 25px 25px;
+
+  .section-box {
+    overflow: auto;
+    float: left;
+    clear: both;
+    @include rectangle(500px, 220px);
+
+    .titlebar {
+      color: white;
+      padding-top: 12px;
+      @include title(45px);
+
+      span {
+        font-weight: lighter;
+        padding-left: 15px;
+      }
+    }
+    p {
+      padding-left: 20px;
+    }
+  }
 }
