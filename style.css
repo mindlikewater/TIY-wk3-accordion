@@ -15,12 +15,20 @@
     #wholepage .titlebar span {
       font-weight: lighter;
       padding-left: 15px; }
+  #wholepage .titlebar:hover {
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    background: #00dff0; }
   #wholepage .section-box {
     overflow: auto;
     float: left;
     clear: both;
-    border: 1px solid #00cada;
+    border: 1px solid #00b8c7;
     width: 500px;
-    height: 160px; }
+    height: 0px;
+    transition: height 3.5s ease; }
     #wholepage .section-box p {
       padding-left: 20px; }
+  #wholepage .height-change {
+    height: 160px; }

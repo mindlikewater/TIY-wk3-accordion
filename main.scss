@@ -5,16 +5,23 @@ $w: 500px;
   box-sizing: border-box;
 }
 
+//set size of content box
 @mixin rectangle ($h) {
-  border: 1px solid $color;
+  border: 1px solid rgb(0, 184, 199);
   width: $w;
   height: $h;
 }
 
+//set size of titlebar box
 @mixin title ($h) {
   width: $w;
   height: $h;
   background: $color;
+}
+
+//transition height of section-box
+@mixin height-transition ($time) {
+  transition: height $time ease;
 }
 
 #wholepage {
@@ -34,14 +41,26 @@ $w: 500px;
     }
   }
 
+  .titlebar:hover {
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    background: rgb(0, 223, 240);
+  }
+
   .section-box {
     overflow: auto;
     float: left;
     clear: both;
-    @include rectangle(160px);
+    @include rectangle(0px);
+    @include height-transition(3.5s);
 
     p {
       padding-left: 20px;
     }
+  }
+
+  .height-change {
+    height: 160px;
   }
 }
