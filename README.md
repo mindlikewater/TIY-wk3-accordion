@@ -2,7 +2,8 @@
 
 This project is used to showcase an accordion of text boxes.
 
-My project can be found at: https://mindlikewater.github.io/TIY-wk3-accordion.
+My project can be found at:
+[Tai's Accordion of Textboxes](https://mindlikewater.github.io/TIY-wk3-accordion).
 
 # Objective
 
